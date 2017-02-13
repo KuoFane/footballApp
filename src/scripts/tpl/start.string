@@ -1,0 +1,50 @@
+<header class="start_header">
+<ul>
+	<li><i class="yo-ico">&#xe600;</i></li>
+	<li>
+		<p id="hotDot">
+			<span class="on">热点</span><span>关注</span>
+		</p>
+	</li>
+	<li><i class="yo-ico">&#xe63c;</i></li>
+</ul>
+</header>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<nav class="nav" id="nav">
+				<ul>
+					<li class="le">足球现场</li>
+					<li>足球美女</li>
+					<li>足球直播</li>
+				</ul>
+			</nav>
+
+			<section class="content">
+				
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<ion-scroll class="swiper-slide">
+								<dl ng-repeat='item in data'>
+									<dt>
+										<img ng-src={{item.img}} alt="">
+									</dt>
+									<dd>
+										<span>{{item.title}}</span>
+									</dd>
+								</dl>	
+							</ion-scroll>
+							<ion-scroll class="swiper-slide">
+								足球美女
+							</ion-scroll>
+							<ion-scroll class="swiper-slide">
+								足球直播
+							</ion-scroll>
+						</div> 
+					</div>	
+					
+			</section>
+		</div>
+		<div class="swiper-slide">关注</div>
+	</div>
+</div>
